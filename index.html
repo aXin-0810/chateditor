@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./css/icons.css"/>
+<link rel="stylesheet" type="text/css" href="./css/chatScreen.css"/>
+</head>
+<body style="box-sizing: border-box;padding: 300px 200px 0;">
+<div class="chatEditor_" id="chatEditor_"></div>
+<script src="./js/recorder.js"></script>
+<script src="./js/chatScreen.js"></script>
+<script>
+    chatScreen({
+        dovId:'chatEditor_',			  //容器id
+        expression:true,		          //表情是否使用
+        dropfile:true,			          //文件拖拽功能是否使用
+        recording:true,			          //录音功能是否使用
+        sendFun:function(){
+            console.log(1);
+        },
+        sendVideoFun:function(){
+            console.log(2);
+        }
+    })
+</script>
+</body>
+</html>
